@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+.container{
+    max-width: 1170px;
+    margin: 0px auto;
+    text-align: center;
+}
+.bagLogo{
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+}
+.bagLogo i {
+    color: rgb(57, 233, 145);
+    margin-right: 5px;
+}
+.headerDiv h1{
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+.headerDiv h3{
+    font-size: 3em;
+    margin: -40px 0px 55px;
+}
+#email-input{
+    padding: 20px;
+    padding-right: 160px;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 768px){
+    form{width: 100%;}
+    #submit-btn{width: 100%;}
+    body{font-size: 10px;}
+}
+#submit-btn{
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    background: black;
+    color: white;
+    margin-top: 10px;
+}
+#submit-btn:hover{
+    background: rgb(59, 54, 54);
+    cursor: pointer;
+}
+.emailDiv{
+    max-width: 500px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.emailDiv p{
+    max-width: 80%;
+    margin: 10px auto;
+    font-size: .8rem;
+}
+.parentDiv-of-3divs{
+    max-widtH: 965px;
+    margin: 90px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.parentDiv-of-3divs div{
+    width: 300px;
+    height: auto;
+    text-align: left;
+    font-size: .9rem;
+    padding: 10px
+}
+.logo{
+    font-size: 30px !important;
+    color: rgb(15, 223, 15);
+}
+.ulDiv{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: auto;
+}
+.ulDiv li img{
+    width: 100px;
+    height: auto;
+    font-size: 30px;
+    margin: 10px auto;
+}
+@media only screen and (max-width: 768px){
+    .imgDiv img{width: 50vw;}
+    .parentDiv-of-3divs div{width: 100%;}
+}
+.footerDiv{
+    max-width: 800px;
+    margin: 90px auto;
+}
+.last-btn{
+    background: rgb(24, 80, 24);
+    color: white;
+    padding: 10px 20px;
+    margin: 20px 0px;
+    transition: .5s;
+}
+.last-btn:hover{
+    cursor: pointer;
+    background: green;
+}

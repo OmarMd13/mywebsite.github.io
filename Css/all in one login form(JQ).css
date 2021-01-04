@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --logo_font: "play", sans-serif;
+    --button_font: 'Sansita Swashed', cursive;
+}
+.main{
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(159,182,132,0.6497744605654762) 0%, rgba(116,121,120,0.9326876258315826) 50%, rgba(157,218,180,1) 100%);
+}
+.container{
+    max-width: calc(100% - 400px);
+    margin: 0px auto;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: calc(100% - 80px);
+    }
+}
+.login_div{
+    width: 470px;
+    padding: 10px;
+    border-radius: 5px;
+    background: linear-gradient(180deg, rgba(31,23,158,0.3920713793329832) 0%, rgba(81,9,121,0.854256253282563) 47%, rgba(0,212,255,1) 100%);
+    box-shadow: 0px 0px 38px -1px black;
+}
+.login_div input{
+    width: calc(100% - 20px);
+    margin: 5px 0px;
+    padding: 5px;
+    outline: none;  
+}
+form{
+    position: relative;
+}
+form i{
+    position: absolute; 
+    right: 15px;
+    top: 13px;
+    visibility: hidden;
+}
+
+.success #success{color: green; visibility: visible !important;}
+.success input{border: 2px solid green;}
+.error input{border: 2px solid red;}
+.error #error{color: red; visibility: visible !important;}
+
+.title{
+    text-align: center;
+    font-family: var(--logo_font);
+    width: calc(100% - 100px);
+    margin: 15px auto;
+    background: linear-gradient(0deg, rgba(73,145,217,0.9214831440388656) 0%, rgba(73,253,45,0.7534159171481092) 100%);
+    color: #f4f4f4;
+    box-shadow: 0px 4px 20px -3px black;
+    transform: skew(-10deg);
+}
+#btn{
+    margin: 30px auto;
+    padding: 10px 70px;
+    display: block;
+    width: calc(100% - 100px);
+    font-family: var(--button_font);
+    font-size: 1.5rem;
+    background: radial-gradient(circle, rgb(105 110 163) 1%, rgb(71 71 73 / 76%) 34%, rgb(147 179 215) 100%);
+    color: white;
+    box-shadow: 0px 8px 20px -3px black;
+}
+small{color: red;}

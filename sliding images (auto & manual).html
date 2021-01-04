@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+	<title>Sliding Image (auto & manual)</title>
+	<link rel="stylesheet" type="text/css" href="Css/1.website.css">
+	<link rel = "stylesheet" type= "text/css" href = "Responsive/1.sliding image.css">
+</head>
+<body>
+<div class = 'slider'>
+	<div class = "spanDiv">
+		<span class = "btn" id = "radio1" onclick = "slide(this)"></span>
+		<span class = "btn" id = "radio2" onclick = "slide(this)"></span>
+		<span class = "btn" id = "radio3" onclick = "slide(this)"></span>
+		<span class = "btn" id = "radio4" onclick = "slide(this)"></span>
+	</div>
+	<div class = "slides">
+		<div id = "slideFirst">
+			<img src = "Images/slide-1.jpg">
+		</div>
+		<div class = "slide">
+			<img src = "Images/slide-2.jpg">
+		</div>
+		<div class = "slide">
+			<img src = "Images/slide-3.jpg">
+		</div>
+		<div class = "slide">
+			<img src = "Images/slide-4.jpg">
+		</div>
+	</div>
+</div>
+<div class = "btnDiv">
+	<button id = "autoSlideBtn" onclick = "slideBtn()">Auto Slide</button>
+</div>
+
+
+
+<script type = "text/javascript" src = "Javascript/1.website.js"></script>
+</body>
+</html>

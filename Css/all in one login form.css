@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --myFont: "play", sans-serif;
+    --myFont_italic: 'Sansita Swashed', cursive;
+    --style_logo: linear-gradient(23deg, rgba(34,193,195,0.6161610151873249) 0%, rgba(146,190,119,1) 38%, rgba(155,190,118,0.9522954689688375) 53%, rgba(253,187,45,0.23800975468312324) 100%);
+    --style_btn: radial-gradient(circle, rgba(63,251,142,1) 0%, rgba(70,195,252,0.7254047126663166) 100%);
+    --style_login: linear-gradient(3deg, rgba(70,210,212,0.8822674577643558) 0%, rgba(153,209,118,1) 36%, rgba(245,196,10,1) 99%);
+    --red: rgb(216, 25, 25);
+}
+.container{
+    max-width: calc(100% - 300px);
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+    .container{
+        max-width: calc(100% - 100px);
+        transform: scale(.8);
+    } 
+}
+.loginDiv{
+    width: 320px;
+    background: var(--style_login);
+    padding: 20px;
+    box-shadow: 0px 0px 30px 0px #1c1616;
+}
+.loginDiv input{
+    padding: 5px;
+    width: calc(100% - 2px);
+    margin: 0px auto;
+}
+form{
+    position: relative;
+    margin: 10px 0px;
+}
+form i{
+    position: absolute;
+    right: -3px;
+    top: 25px;
+    visibility: hidden !important;
+}
+
+/* they'll work after the class added by js */
+.showGreen #success{
+    color: green;
+    visibility: visible !important;
+}
+.showGreen input{
+    border: 3px solid #42d942;
+}
+.showRed #error{
+    color: var(--red);
+    visibility: visible !important;
+}
+.showRed input{
+    border: 3px solid var(--red);
+}
+
+form p{
+    font-family: var(--myFont);
+}
+.title{
+    font-family: var(--myFont_italic);
+    text-align: center;
+    background: var(--style_logo);
+    height: 45px;
+    padding: 10px;
+}
+#submit_btn{
+    padding: 10px 70px;
+    margin: 30px auto;
+    display: block;
+    background: var(--style_btn);
+    font-family: var(--myFont_italic);
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 20px -3px black;
+    transition: .5s;
+}
+#submit_btn:hover{
+    transform: scale(1.08) translate(0px, -5px);
+    box-shadow: 0px 5px 20px -3px black;
+}
+.main{
+    background: linear-gradient(97deg, rgba(37,41,89,0.8822674577643558) 0%, rgba(2,166,27,1) 51%, rgba(209,201,7,1) 99%);
+}
+small{
+    color: var(--red);
+}
